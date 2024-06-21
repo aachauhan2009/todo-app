@@ -11,17 +11,24 @@ datasource db {
 }
 
 model User {
-  id    Int     @id @default(autoincrement())
-  email String  @unique
-  name  String?
+  id       Int        @id @default(autoincrement())
+  email    String     @unique
+  name     String     @unique
   password String
   todoList Todo[]
 }
 
 model Todo {
-  id        Int     @id @default(autoincrement())
-  title     String
-  description   String
-  creator    User    @relation(fields: [userId], references: [id])
-  userId  Int
+  id          Int    @id @default(autoincrement())
+  title       String
+  description String
+  creator     User   @relation(fields: [userId], references: [id])
+  userId      Int
+}
+
+model Session {
+  id        String   @id
+  sid       String   @unique
+  data      String
+  expiresAt   DateTime
 }
