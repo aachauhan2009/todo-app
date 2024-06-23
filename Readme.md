@@ -2,51 +2,51 @@
 
 ## Setup and Run Server
 
-yarn setup:server
-yarn server
+`yarn setup:server`
+`yarn server`
 
 or
 
-npm run setup:server
-npm run server
+`npm run setup:server`
+`npm run server`
 
 or
 
-cd server
-yarn
-yarn migrate
-yarn start
+`cd server`
+`yarn`
+`yarn migrate`
+`yarn start`
 
 or
 
 
-cd server
-npm i
-npm run migrate
-npm run start
+`cd server`
+`npm i`
+`npm run migrate`
+`npm run start`
 
 ## Setup and Run Client
 
-yarn setup:client
-yarn client
+`yarn setup:client`
+`yarn client`
 
 or
 
-npm run setup:client
-npm run client
+`npm run setup:client`
+`npm run client`
 
 or
 
-cd client
-yarn
-yarn dev
+`cd client`
+`yarn`
+`yarn dev`
 
 
 or
 
-cd client
-npm i
-npm run dev
+`cd client`
+`npm i`
+`npm run dev`
 
 
 
@@ -59,8 +59,8 @@ SQLite db is used to no need to run any other db.
 
 ### Server
 
-cd server
-npm run test
+`cd server`
+`npm run test`
 
 ----------------------|---------|----------|---------|---------|--------------------
 File                  | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s  
@@ -88,8 +88,8 @@ All files             |   94.21 |     75.4 |     100 |   93.42 |
 
 ### Client
 
-cd client
-npm run test
+`cd client`
+`npm run test`
 
 -----------------------|---------|----------|---------|---------|-------------------
 File                   | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
