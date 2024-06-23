@@ -10,6 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@tanstack/react-query": "^5.45.1",
     "@types/draft-js": "^0.11.18",
     "@types/react-draft-wysiwyg": "^1.13.8",
     "axios": "^1.7.2",
@@ -18,7 +19,9 @@
     "react-cookie": "^7.1.4",
     "react-dom": "^18.2.0",
     "react-draft-wysiwyg": "^1.15.0",
-    "react-router-dom": "^6.23.1"
+    "react-hook-form": "^7.52.0",
+    "react-router-dom": "^6.23.1",
+    "react-toastify": "^10.0.5"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",

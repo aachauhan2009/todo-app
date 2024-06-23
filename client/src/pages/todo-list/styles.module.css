@@ -1,0 +1,150 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: var(--accent-color);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--secondary-color);
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2rem;
+    color: var(--accent-color);
+}
+
+.header a {
+    text-decoration: none;
+}
+
+.main {
+    width: 100%;
+}
+
+.todoList {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.todoItem {
+    background-color: var(--hover-background);
+    padding: 15px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px var(--box-shadow-color);
+    transition: box-shadow 0.3s;
+}
+
+.todoItem:hover {
+    box-shadow: 0 4px 8px var(--box-shadow-hover-color);
+}
+
+.todoTitle {
+    margin: 0 0 10px 0;
+    font-size: 1.5rem;
+    color: var(--accent-color);
+}
+
+.todoDescription {
+    margin: 0;
+    font-size: 1rem;
+    color: var(--secondary-color);
+}
+
+.todoStatus {
+    font-size: 1rem;
+    padding: 0 0.5rem;
+    line-height: 1.5rem;
+    border-radius: 1rem;
+}
+
+.todoActions {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.todoButton {
+    padding: 8px 16px;
+    background-color: var(--accent-color);
+    color: var(--highlight-color);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.todoButton:hover {
+    background-color: var(--secondary-color);
+}
+
+.footer {
+    margin-top: 20px;
+}
+
+.logoutButton {
+    padding: 10px 20px;
+    background-color: var(--danger-color);
+    color: var(--highlight-color);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.logoutButton:hover {
+    background-color: var(--danger-hover-color);
+}
+
+.new {
+    background-color: var(--new-todo-background);
+}
+
+.active {
+    background-color: var(--active-todo-background);
+}
+
+.completed {
+    background-color: var(--completed-todo-background);
+}
+
+.todoFooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tabs {
+    display: flex;
+}
+
+.tabItem {
+    color: var(--highlight-color);
+    flex: 1 0 0;
+    background: none;
+    padding: 0.5rem;
+    border: 0;
+}
+
+.selectedTab {
+    background: var(--hover-background);
+}
+
+.notFound {
+    background-color: var(--hover-background);
+    margin-top: 1rem;
+    padding: 1rem;
+    color: var(--secondary-color);
+}

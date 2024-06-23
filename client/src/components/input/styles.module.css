@@ -1,13 +1,16 @@
 .input {
-    padding: 0.5rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 1rem;
-    width: 100%;
-  }
-  
-  .input:focus {
-    border-color: #007bff;
-    outline: none;
-  }
-  
+  padding: 0.5rem;
+  border: 1px solid var(--input-border-color);
+  background: none;
+  color: var(--highlight-color);
+  border-radius: 4px;
+  font-size: 1rem;
+  width: 80%;
+  max-width: 500px;
+  margin: 10px 0;
+}
+
+.input:focus {
+  border-color: var(--input-focus-border-color);
+  outline: none;
+}

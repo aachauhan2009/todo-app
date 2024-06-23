@@ -1,0 +1,50 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.details {
+    align-self: stretch;
+    text-align: left;
+    padding: 2rem;
+}
+
+.avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    text-align: center;
+    background-color: var(--secondary-color);
+}
+
+.avatarImage {
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    margin: 0.5rem;
+    border: 2px solid var(--background-color);
+}
+
+.avatarSmall {
+    height: 50px;
+    width: 50px;
+}
+
+.avatarImageSelected {
+    border-color: white;
+}
+
+.avatarBtn {
+    background: none;
+    border: none;
+}
+
+.editBtn {
+    align-self: center;
+}
