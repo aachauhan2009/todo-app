@@ -1,4 +1,3 @@
-// src/components/Header.tsx
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import styles from "./styles.module.css";
@@ -17,7 +16,7 @@ const Header = () => {
     return (
         <header className={styles.header}>
             <div className={styles.logo}>
-                <Link to="/">MyLogo</Link>
+                <Link to="/">ToDoNow</Link>
             </div>
             <nav className={`${styles.nav} ${isMobileMenuOpen ? styles.navOpen : ""}`}>
                 {isAuthenticated ? <>
