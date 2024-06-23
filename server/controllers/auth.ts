@@ -3,6 +3,8 @@ import { prisma } from '../utils/prisma';
 import { hashPassword, comparePassword } from '../utils/hash';
 import { signUpSchema, loginSchema } from '../schemas/auth';
 import z from "zod"
+import { generateErrorMessage } from 'zod-error';
+import { formatZodError } from '../utils/format-zod-error';
 
 export interface SignUpBody {
     name: string;
@@ -21,7 +23,7 @@ export const signUp = async (req: Request, res: Response) => {
         res.json({ id: user?.id });
     } catch (err: any) {
         if (err instanceof z.ZodError) {
-            res.status(400).json(err.errors);
+            res.status(400).send(formatZodError(err));
         } else {
             res.status(500).send("Sign up failed");
         }
@@ -48,7 +50,7 @@ export const login = async (req: Request, res: Response) => {
         }
     } catch (err: any) {
         if (err instanceof z.ZodError) {
-            res.status(400).json(err.errors);
+            res.status(400).send(formatZodError(err));
         } else {
             res.status(500).send("Login Failed");
         }

@@ -3,6 +3,7 @@ import { prisma } from '../utils/prisma';
 import { Status } from '../constants';
 import { todoSchema } from '../schemas/todo';
 import z from "zod";
+import { formatZodError } from '../utils/format-zod-error';
 
 type TaskBody = {
     title: string;
@@ -57,7 +58,7 @@ export const createTodo = async (req: Request, res: Response) => {
         }
     } catch (err: any) {
         if (err instanceof z.ZodError) {
-            res.status(400).json(err.errors);
+            res.status(400).send(formatZodError(err));
         } else {
             res.status(500).send("Something went wrong");
         }
@@ -79,7 +80,7 @@ export const updateTodo = async (req: Request, res: Response) => {
         }
     } catch (err: any) {
         if (err instanceof z.ZodError) {
-            res.status(400).json(err.errors);
+            res.status(400).send(formatZodError(err));
         } else {
             res.status(500).send(err.message || "Something went wrong");
         }

@@ -5,6 +5,7 @@ import axios, { AxiosError } from 'axios';
 import Input from '../../components/input';
 import Button from '../../components/button';
 import { toast } from 'react-toastify';
+import { showErrorToast } from '../../toast';
 
 type LoginFormInputs = {
   name: string;
@@ -26,7 +27,7 @@ const Login = () => {
       navigate('/');
     },
     onError: (err: AxiosError) => {
-      toast.error(err?.response?.data as string || "Login Failed");
+      showErrorToast(err, "Login Failed");
     }
   });
 

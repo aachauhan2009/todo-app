@@ -4,10 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "setup": "cd server && yarn && yarn migrate",
+    "setup:server": "cd server && yarn && yarn migrate",
+    "setup:client": "cd server && yarn",
     "server": "cd server && yarn start",
     "client": "cd client && yarn dev"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "zod-error": "^1.5.0"
+  }
 }

@@ -5,6 +5,7 @@ import axios, { AxiosError } from 'axios';
 import Button from '../../components/button';
 import { toast } from 'react-toastify';
 import { useMutation } from '@tanstack/react-query';
+import { showErrorToast } from '../../toast';
 
 type SignUpFormInputs = {
   name: string;
@@ -23,7 +24,7 @@ const SignUp = () => {
       navigate('/login');
     },
     onError: (err: AxiosError) => {
-      toast.error(err?.response?.data as string || "Login Failed");
+      showErrorToast(err)
     }
   });
   const onSubmit: SubmitHandler<SignUpFormInputs> = (data) => {

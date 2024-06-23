@@ -8,6 +8,8 @@ import styles from './styles.module.css';
 import Input from '../../components/input';
 import Button from '../../components/button';
 import { createTodo } from './api';
+import { showErrorToast } from '../../toast';
+import { AxiosError } from 'axios';
 
 type CreateTodoFormInputs = {
   title: string;
@@ -24,8 +26,8 @@ const CreateTodo: React.FC = () => {
       toast.success('Todo created successfully!');
       navigate('/todo-list');
     },
-    onError: () => {
-      toast.error('Error creating todo');
+    onError: (err: AxiosError) => {
+      showErrorToast(err, 'Error creating todo');
     }
   });
 

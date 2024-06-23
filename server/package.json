@@ -5,7 +5,9 @@
   "main": "server.ts",
   "scripts": {
     "migrate": "prisma migrate dev --name todo",
-    "start": "ts-node server"
+    "start": "ts-node server",
+    "test": "jest --maxWorkers=1",
+    "test:coverage": "jest --maxWorkers=1 --coverage"
   },
   "author": "",
   "license": "ISC",

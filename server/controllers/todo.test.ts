@@ -91,7 +91,7 @@ describe('Todo Routes', () => {
                 .send(invalidTodo)
                 .expect(400);
 
-            expect(response.body).toBeInstanceOf(Array);
+            expect(response.text).toEqual("Title is required 🔥 Description is required 🔥 Invalid enum value. Expected 'NEW' | 'PROGRESS' | 'DONE', received ''");
         });
 
         it('should return 500 if something goes wrong', async () => {
@@ -132,7 +132,7 @@ describe('Todo Routes', () => {
                 .send(invalidTodo)
                 .expect(400);
 
-            expect(response.body).toBeInstanceOf(Array);
+            expect(response.text).toEqual("Title is required 🔥 Description is required 🔥 Invalid enum value. Expected 'NEW' | 'PROGRESS' | 'DONE', received ''");
         });
 
         it('should return 500 if something goes wrong', async () => {

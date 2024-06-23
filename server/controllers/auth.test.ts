@@ -76,8 +76,7 @@ describe('Authentication Routes', () => {
                 .send(invalidUserData)
                 .expect(400);
 
-            expect(response.body).toBeInstanceOf(Array);
-            expect(response.body).toHaveLength(2); // Assuming signUpSchema validates 'name' and 'password'
+            expect(response.text).toEqual("Name is required 🔥 Password must be at least 6 characters long");
         });
     });
 
