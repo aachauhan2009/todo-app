@@ -23,8 +23,7 @@ export const signUp = async (req: Request, res: Response) => {
         if (err instanceof z.ZodError) {
             res.status(400).json(err.errors);
         } else {
-            console.log(err);
-            res.sendStatus(500);
+            res.status(500).send("Sign up failed");
         }
     }
 };
@@ -38,6 +37,7 @@ export const login = async (req: Request, res: Response) => {
             if (await comparePassword(password, user.password)) {
                 req.session.regenerate(() => {
                     req.session.userId = user?.id;
+                    console.log("session regenerated", req.session.userId)
                     res.json({ id: user?.id });
                 });
             } else {
@@ -50,8 +50,7 @@ export const login = async (req: Request, res: Response) => {
         if (err instanceof z.ZodError) {
             res.status(400).json(err.errors);
         } else {
-            console.log(err);
-            res.status(500).send("Something went wrong");
+            res.status(500).send("Login Failed");
         }
     }
 };
@@ -89,6 +88,7 @@ export const getUserProfile = async (req: Request, res: Response) => {
 };
 
 export const saveUserProfile = async (req: Request, res: Response) => {
+    console.log(req.session.userId, "req.session.userId");
     if (req.session.userId) {
         const { email, avatar } = req.body;
         const user = await prisma.user.update({
@@ -97,7 +97,7 @@ export const saveUserProfile = async (req: Request, res: Response) => {
                 avatar,
             }
         });
-        res.json(user);
+        res.json({ id: user?.id });
     } else {
         res.sendStatus(401);
     }

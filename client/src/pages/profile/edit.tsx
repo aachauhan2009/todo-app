@@ -54,7 +54,7 @@ const EditProfile: React.FC<EditProfileProps> = ({ setIsEditing, email = "", ava
                                 return <button key={avatarName} type='button' className={styles.avatarBtn} onClick={() => {
                                     onChange(avatarName);
                                     onBlur();
-                                }}><img className={`${styles.avatarImage} ${value === avatarName ? styles.avatarImageSelected : ""} ${styles.avatarSmall}`} src={avatar as any} /></button>
+                                }}><img className={`${styles.avatarImage} ${value === avatarName ? styles.avatarImageSelected : ""} ${styles.avatarSmall}`} alt={avatarName} src={avatar as any} /></button>
                             })}
                         </div>
                     }} />

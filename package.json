@@ -1,0 +1,13 @@
+{
+  "name": "todo-list",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "setup": "cd server && yarn && yarn migrate",
+    "server": "cd server && yarn start",
+    "client": "cd client && yarn dev"
+  },
+  "author": "",
+  "license": "ISC"
+}

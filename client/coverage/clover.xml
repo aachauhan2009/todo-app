@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1719168430822" clover="3.2.0">
+  <project timestamp="1719168430822" name="All files">
+    <metrics statements="117" coveredstatements="106" conditionals="45" coveredconditionals="35" methods="57" coveredmethods="49" elements="219" coveredelements="190" complexity="0" loc="117" ncloc="117" packages="8" files="17" classes="17"/>
+    <package name="src">
+      <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="constants.ts" path="/Users/amitchauhan/Documents/code/todo-list/client/src/constants.ts">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="test-util.tsx" path="/Users/amitchauhan/Documents/code/todo-list/client/src/test-util.tsx">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="6" count="5" type="stmt"/>
+        <line num="7" count="18" type="stmt"/>
+        <line num="8" count="18" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.components.button">
+      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="index.tsx" path="/Users/amitchauhan/Documents/code/todo-list/client/src/components/button/index.tsx">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="7" count="4" type="stmt"/>
+        <line num="8" count="50" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.components.input">
+      <metrics statements="4" coveredstatements="4" conditionals="1" coveredconditionals="0" methods="2" coveredmethods="2"/>
+      <file name="index.tsx" path="/Users/amitchauhan/Documents/code/todo-list/client/src/components/input/index.tsx">
+        <metrics statements="4" coveredstatements="4" conditionals="1" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="9" count="5" type="cond" truecount="0" falsecount="1"/>
+        <line num="10" count="58" type="stmt"/>
+        <line num="19" count="5" type="stmt"/>
+        <line num="20" count="10" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.pages.create-todo">
+      <metrics statements="12" coveredstatements="11" conditionals="4" coveredconditionals="4" methods="5" coveredmethods="5"/>
+      <file name="api.ts" path="/Users/amitchauhan/Documents/code/todo-list/client/src/pages/create-todo/api.ts">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="2" type="stmt"/>
+      </file>
+      <file name="index.tsx" path="/Users/amitchauhan/Documents/code/todo-list/client/src/pages/create-todo/index.tsx">
+        <metrics statements="10" coveredstatements="9" conditionals="4" coveredconditionals="4" methods="4" coveredmethods="4"/>
+        <line num="17" count="1" type="stmt"/>
+        <line num="18" count="7" type="stmt"/>
+        <line num="19" count="7" type="stmt"/>
+        <line num="21" count="7" type="stmt"/>
+        <line num="24" count="1" type="stmt"/>
+        <line num="25" count="0" type="stmt"/>
+        <line num="28" count="2" type="stmt"/>
+        <line num="32" count="7" type="stmt"/>
+        <line num="33" count="2" type="stmt"/>
+        <line num="36" count="7" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.pages.login">
+      <metrics statements="12" coveredstatements="12" conditionals="8" coveredconditionals="6" methods="5" coveredmethods="5"/>
+      <file name="index.tsx" path="/Users/amitchauhan/Documents/code/todo-list/client/src/pages/login/index.tsx">
+        <metrics statements="12" coveredstatements="12" conditionals="8" coveredconditionals="6" methods="5" coveredmethods="5"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="15" count="7" type="stmt"/>
+        <line num="16" count="7" type="stmt"/>
+        <line num="18" count="7" type="stmt"/>
+        <line num="20" count="7" type="stmt"/>
+        <line num="21" count="2" type="stmt"/>
+        <line num="23" count="1" type="stmt"/>
+        <line num="26" count="1" type="stmt"/>
+        <line num="29" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="33" count="7" type="stmt"/>
+        <line num="34" count="2" type="stmt"/>
+        <line num="37" count="7" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.pages.profile">
+      <metrics statements="23" coveredstatements="20" conditionals="14" coveredconditionals="10" methods="10" coveredmethods="8"/>
+      <file name="avatars.ts" path="/Users/amitchauhan/Documents/code/todo-list/client/src/pages/profile/avatars.ts">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="12" count="1" type="stmt"/>
+      </file>
+      <file name="edit.tsx" path="/Users/amitchauhan/Documents/code/todo-list/client/src/pages/profile/edit.tsx">
+        <metrics statements="15" coveredstatements="12" conditionals="6" coveredconditionals="3" methods="8" coveredmethods="6"/>
+        <line num="16" count="1" type="cond" truecount="0" falsecount="2"/>
+        <line num="17" count="1" type="stmt"/>
+        <line num="24" count="1" type="stmt"/>
+        <line num="31" count="1" type="stmt"/>
+        <line num="32" count="1" type="stmt"/>
+        <line num="34" count="1" type="stmt"/>
+        <line num="35" count="1" type="stmt"/>
+        <line num="41" count="1" type="stmt"/>
+        <line num="42" count="1" type="stmt"/>
+        <line num="45" count="1" type="stmt"/>
+        <line num="52" count="1" type="stmt"/>
+        <line num="54" count="9" type="stmt"/>
+        <line num="55" count="0" type="stmt"/>
+        <line num="56" count="0" type="stmt"/>
+        <line num="76" count="0" type="stmt"/>
+      </file>
+      <file name="index.tsx" path="/Users/amitchauhan/Documents/code/todo-list/client/src/pages/profile/index.tsx">
+        <metrics statements="7" coveredstatements="7" conditionals="8" coveredconditionals="7" methods="2" coveredmethods="2"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="10" count="6" type="stmt"/>
+        <line num="15" count="6" type="stmt"/>
+        <line num="17" count="6" type="cond" truecount="2" falsecount="0"/>
+        <line num="18" count="2" type="stmt"/>
+        <line num="21" count="4" type="stmt"/>
+        <line num="30" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.pages.sign-up">
+      <metrics statements="12" coveredstatements="12" conditionals="12" coveredconditionals="10" methods="6" coveredmethods="6"/>
+      <file name="index.tsx" path="/Users/amitchauhan/Documents/code/todo-list/client/src/pages/sign-up/index.tsx">
+        <metrics statements="12" coveredstatements="12" conditionals="12" coveredconditionals="10" methods="6" coveredmethods="6"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="16" count="12" type="stmt"/>
+        <line num="17" count="12" type="stmt"/>
+        <line num="20" count="12" type="stmt"/>
+        <line num="21" count="2" type="stmt"/>
+        <line num="23" count="1" type="stmt"/>
+        <line num="26" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="29" count="12" type="stmt"/>
+        <line num="30" count="2" type="stmt"/>
+        <line num="33" count="12" type="stmt"/>
+        <line num="35" count="12" type="stmt"/>
+        <line num="68" count="3" type="cond" truecount="2" falsecount="0"/>
+      </file>
+    </package>
+    <package name="src.pages.todo-list">
+      <metrics statements="49" coveredstatements="42" conditionals="6" coveredconditionals="5" methods="27" coveredmethods="21"/>
+      <file name="api.ts" path="/Users/amitchauhan/Documents/code/todo-list/client/src/pages/todo-list/api.ts">
+        <metrics statements="6" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="0"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="0" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+      </file>
+      <file name="constants.ts" path="/Users/amitchauhan/Documents/code/todo-list/client/src/pages/todo-list/constants.ts">
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+      </file>
+      <file name="index.tsx" path="/Users/amitchauhan/Documents/code/todo-list/client/src/pages/todo-list/index.tsx">
+        <metrics statements="28" coveredstatements="25" conditionals="4" coveredconditionals="3" methods="15" coveredmethods="13"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="13" count="10" type="stmt"/>
+        <line num="14" count="10" type="stmt"/>
+        <line num="15" count="10" type="stmt"/>
+        <line num="17" count="10" type="stmt"/>
+        <line num="18" count="4" type="stmt"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="22" count="4" type="stmt"/>
+        <line num="25" count="10" type="stmt"/>
+        <line num="26" count="10" type="stmt"/>
+        <line num="28" count="6" type="stmt"/>
+        <line num="31" count="10" type="stmt"/>
+        <line num="33" count="1" type="stmt"/>
+        <line num="35" count="1" type="stmt"/>
+        <line num="38" count="0" type="stmt"/>
+        <line num="42" count="10" type="stmt"/>
+        <line num="43" count="1" type="stmt"/>
+        <line num="45" count="1" type="stmt"/>
+        <line num="48" count="0" type="stmt"/>
+        <line num="52" count="10" type="stmt"/>
+        <line num="53" count="1" type="stmt"/>
+        <line num="56" count="10" type="stmt"/>
+        <line num="57" count="1" type="stmt"/>
+        <line num="60" count="10" type="stmt"/>
+        <line num="61" count="3" type="cond" truecount="1" falsecount="1"/>
+        <line num="62" count="0" type="stmt"/>
+        <line num="66" count="10" type="stmt"/>
+        <line num="74" count="11" type="stmt"/>
+      </file>
+      <file name="search-input.tsx" path="/Users/amitchauhan/Documents/code/todo-list/client/src/pages/todo-list/search-input.tsx">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="10" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+      </file>
+      <file name="status-tab.tsx" path="/Users/amitchauhan/Documents/code/todo-list/client/src/pages/todo-list/status-tab.tsx">
+        <metrics statements="4" coveredstatements="3" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="2"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="10" count="10" type="stmt"/>
+        <line num="13" count="40" type="stmt"/>
+        <line num="16" count="0" type="stmt"/>
+      </file>
+      <file name="todo-item.tsx" path="/Users/amitchauhan/Documents/code/todo-list/client/src/pages/todo-list/todo-item.tsx">
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="20" count="11" type="stmt"/>
+        <line num="28" count="16" type="stmt"/>
+        <line num="32" count="1" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>

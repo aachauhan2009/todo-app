@@ -23,7 +23,7 @@ app.use(
         secret: 'todo list',
         resave: true,
         saveUninitialized: true,
-        store: new PrismaSessionStore(prisma, {
+        store: process.env.NODE_ENV === "test" ? undefined : new PrismaSessionStore(prisma, {
             checkPeriod: 2 * 60 * 1000, // 2 minutes
             dbRecordIdIsSessionId: true,
         }),
@@ -33,6 +33,13 @@ app.use(
 app.use('/api/auth', authRoutes);
 app.use('/api/todo', todoRoutes);
 
-app.listen(port, () => {
+const server = app.listen(port, () => {
     console.log(`App listening on port ${port}`);
 });
+
+export const stopServer = () => {
+    server.close();
+}
+
+export default app;
+

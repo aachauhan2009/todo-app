@@ -36,12 +36,13 @@ const Login = () => {
 
   return (
     <div style={{ maxWidth: 600, margin: "0 auto" }}>
-      <h2>Login</h2>
+      <h2>Login with your Username and Password</h2>
       <form onSubmit={handleSubmit(onSubmit)}>
         <div>
           <Input
             placeholder='Username'
             register={register}
+            registerOptions={{ required: 'Username is required' }}
             name="name"
           />
           {errors.name && <span>{errors.name.message}</span>}
@@ -51,6 +52,7 @@ const Login = () => {
             type='password'
             placeholder='Password'
             register={register}
+            registerOptions={{ required: 'Password is required' }}
             name="password"
           />
           {errors.password && <span>{errors.password.message}</span>}

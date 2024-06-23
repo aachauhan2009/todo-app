@@ -4,15 +4,21 @@
   "description": "",
   "main": "server.ts",
   "scripts": {
-    "migrate": "prisma migrate dev --name update",
+    "migrate": "prisma migrate dev --name todo",
     "start": "ts-node server"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@types/express": "^4.17.21",
+    "@types/jest": "^29.5.12",
     "@types/node": "^20.14.5",
+    "@types/supertest": "^6.0.2",
+    "jest": "^29.7.0",
     "prisma": "^5.15.1",
+    "supertest": "^7.0.0",
+    "supertest-session": "^5.0.1",
+    "ts-jest": "^29.1.5",
     "ts-node": "^10.9.2",
     "typescript": "^5.4.5"
   },

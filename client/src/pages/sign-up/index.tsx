@@ -18,7 +18,7 @@ const SignUp = () => {
 
 
   const { mutate, isPending } = useMutation({
-    mutationFn: (data: SignUpFormInputs) => axios.post("/api/auth/sign-up", data),
+    mutationFn: (data: SignUpFormInputs) => axios.post("/api/auth/sign-up", { name: data.name, password: data.password }),
     onSuccess: () => {
       navigate('/login');
     },
@@ -34,7 +34,7 @@ const SignUp = () => {
 
   return (
     <div style={{ maxWidth: 600, margin: "0 auto" }}>
-      <h2>Sign Up</h2>
+      <h2>Create New Account</h2>
       <form onSubmit={handleSubmit(onSubmit)}>
         <div>
           <Input
