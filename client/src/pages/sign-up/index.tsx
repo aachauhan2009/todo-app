@@ -46,7 +46,7 @@ const SignUp = () => {
               required: 'Username is required',
             }}
           />
-          {errors.name && <span>{errors.name.message}</span>}
+          {errors.name && <div>{errors.name.message}</div>}
         </div>
         <div>
           <Input
@@ -56,7 +56,7 @@ const SignUp = () => {
             placeholder='Password'
             registerOptions={{ required: 'Password is required' }}
           />
-          {errors.password && <span>{errors.password.message}</span>}
+          {errors.password && <div>{errors.password.message}</div>}
         </div>
         <div>
           <Input
@@ -69,7 +69,7 @@ const SignUp = () => {
               validate: value => value === password || 'Passwords do not match'
             }}
           />
-          {errors.confirmPassword && <span>{errors.confirmPassword.message}</span>}
+          {errors.confirmPassword && <div>{errors.confirmPassword.message}</div>}
         </div>
         <Button disabled={isPending} type='submit'>{isPending ? "Loading..." : "Sign Up"}</Button>
       </form>
